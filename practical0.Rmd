@@ -1,0 +1,31 @@
+---
+title: "practical0"
+author: "Reona"
+date: '2023-05-12'
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+```{r}
+library(tidyverse) 
+library(datasauRus)
+```
+
+```{r}
+datasaurus_dozen %>%
+  count(dataset)
+```
+
+```{r}
+dino_data <- datasaurus_dozen %>%
+  filter(dataset == "dino")
+```
+
+```{r}
+ggplot(data = dino_data, mapping = aes(x = x, y = y)) +
+  geom_point()
+```
+
