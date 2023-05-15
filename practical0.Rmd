@@ -2,8 +2,9 @@
 title: "practical0"
 author: "Reona"
 date: '2023-05-12'
-output: 
-  html_document: 
+output:
+  pdf_document: default
+  html_document:
     fig_width: 9
     fig_height: 7
 ---
@@ -68,7 +69,7 @@ ggplot(data = circle_data, mapping = aes(x = x, y = y)) +
 circle_data %>%
   summarize(r = cor(x, y))
 ```
-There is no great difference between correlations of dino plot and star plot.
+There is no great difference between correlations of dino plot and circle plot.
 
 ```{r}
 ggplot(datasaurus_dozen, aes(x = x, y = y, color = dataset))+
