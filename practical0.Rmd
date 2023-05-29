@@ -1,6 +1,6 @@
 ---
 title: "practical0"
-author: "Reona"
+author: "Reona Ashiko"
 date: '2023-05-12'
 output:
   pdf_document: default
